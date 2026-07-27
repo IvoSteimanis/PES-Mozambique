@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+title: >-
+  Replication package for "A terminated REDD+ project in Mozambique:
+  Mitigation underperformance, lasting local benefits"
+message: >-
+  If you use this software or the accompanying data, please cite both the
+  article and this replication package.
+type: software
+authors:
+  - given-names: Ivo
+    family-names: Steimanis
+    email: ivo.steimanis@staff.uni-marburg.de
+    orcid: 'https://orcid.org/0000-0002-8550-4675'
+    affiliation: >-
+      University of Marburg, School of Business and Economics,
+      Working Group Sustainable Use of Natural Resources
+  - given-names: Tobias
+    family-names: Vorlaufer
+    orcid: 'https://orcid.org/0000-0002-1586-5715'
+    affiliation: >-
+      Leibniz Centre for Agricultural Landscape Research (ZALF),
+      Working Group Governance of Ecosystem Services
+  - given-names: Björn
+    family-names: Vollan
+    orcid: 'https://orcid.org/0000-0002-5592-4185'
+    affiliation: >-
+      University of Marburg, School of Business and Economics,
+      Working Group Sustainable Use of Natural Resources
+repository-code: 'https://github.com/IvoSteimanis/PES-Mozambique'
+abstract: >-
+  Stata code reproducing the figures and tables of a study of the Sofala
+  Community Carbon Project, a terminated REDD+ and agroforestry project in
+  central Mozambique. The analysis combines matched difference-in-differences
+  estimates of forest-cover change from Hansen Global Forest Change data with a
+  household survey conducted five years after the project ended. The
+  analysis-ready data are deposited separately; see README.md.
+keywords:
+  - REDD+
+  - payments for ecosystem services
+  - deforestation
+  - Mozambique
+  - difference-in-differences
+  - propensity score matching
+  - carbon offsets
+  - agroforestry
+license: BSD-3-Clause
+version: 0.9.0
+date-released: '2026-07-27'
+preferred-citation:
+  type: article
+  title: >-
+    A terminated REDD+ project in Mozambique: Mitigation underperformance,
+    lasting local benefits
+  authors:
+    - given-names: Ivo
+      family-names: Steimanis
+      orcid: 'https://orcid.org/0000-0002-8550-4675'
+    - given-names: Tobias
+      family-names: Vorlaufer
+      orcid: 'https://orcid.org/0000-0002-1586-5715'
+    - given-names: Björn
+      family-names: Vollan
+      orcid: 'https://orcid.org/0000-0002-5592-4185'
+  journal: Journal of Environmental Management
+  year: 2026
