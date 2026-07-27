@@ -1,7 +1,5 @@
 # Replication package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21629264.svg)](https://doi.org/10.5281/zenodo.21629264)
-
 **A terminated REDD+ project in Mozambique: Mitigation underperformance, lasting local benefits**
 
 Ivo Steimanis<sup>a,\*</sup>, Tobias Vorlaufer<sup>b</sup>, Björn Vollan<sup>a</sup>
@@ -44,10 +42,9 @@ Zenodo so that they carry a citable DOI, so that the deposit is permanently arch
 than dependent on a repository that can be renamed or removed, and so that cloning the code
 does not pull 320 MB of binary Stata files.
 
-- **Code:** <https://github.com/IvoSteimanis/PES-Mozambique>, archived at
-  [10.5281/zenodo.21629264](https://doi.org/10.5281/zenodo.21629264). This is a concept DOI
-  and always resolves to the latest release.
-- **Data:** `https://doi.org/10.5281/zenodo.<DATA-ID>` — **deposit pending, DOI to be added.**
+- **Code:** <https://github.com/IvoSteimanis/PES-Mozambique>
+- **Data and archived code:** `https://doi.org/10.5281/zenodo.<ID>` —
+  **Zenodo deposit pending; the concept DOI will be added here.**
 
 Clone or download the code, then unpack the data archive into the repository root so that
 `data/` and `processed/` sit next to `run.do`.

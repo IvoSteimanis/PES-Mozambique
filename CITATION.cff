@@ -27,12 +27,6 @@ authors:
       University of Marburg, School of Business and Economics,
       Working Group Sustainable Use of Natural Resources
 repository-code: 'https://github.com/IvoSteimanis/PES-Mozambique'
-doi: 10.5281/zenodo.21629264
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.21629264
-    description: >-
-      Concept DOI for the archived code; always resolves to the latest release.
 abstract: >-
   Stata code reproducing the figures and tables of a study of the Sofala
   Community Carbon Project, a terminated REDD+ and agroforestry project in
