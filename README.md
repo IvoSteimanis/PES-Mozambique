@@ -1,5 +1,8 @@
 # Replication package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21629264.svg)](https://doi.org/10.5281/zenodo.21629264)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **A terminated REDD+ project in Mozambique: Mitigation underperformance, lasting local benefits**
 
 Ivo Steimanis<sup>a,\*</sup>, Tobias Vorlaufer<sup>b</sup>, Björn Vollan<sup>a</sup>
@@ -42,8 +45,8 @@ included, so you can clone it and run `run.do` immediately, then compare your ou
 what the authors produced.
 
 - **Repository:** <https://github.com/IvoSteimanis/PES-Mozambique> (about 350 MB)
-- **Archive:** `https://doi.org/10.5281/zenodo.<ID>` —
-  **Zenodo deposit pending; the concept DOI will be added here.**
+- **Archive:** [10.5281/zenodo.21629264](https://doi.org/10.5281/zenodo.21629264) — concept
+  DOI, always resolves to the latest version
 
 Cite the Zenodo DOI rather than the repository URL. It is permanent, whereas a repository can
 be renamed, transferred or deleted.
