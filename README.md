@@ -14,7 +14,8 @@ Ivo Steimanis<sup>a,\*</sup>, Tobias Vorlaufer<sup>b</sup>, Björn Vollan<sup>a<
 
 ORCID: IS [0000-0002-8550-4675](https://orcid.org/0000-0002-8550-4675) · TV [0000-0002-1586-5715](https://orcid.org/0000-0002-1586-5715) · BV [0000-0002-5592-4185](https://orcid.org/0000-0002-5592-4185)
 
-Accepted for publication in the *Journal of Environmental Management*.
+Published in the *Journal of Environmental Management*:
+[10.1016/j.jenvman.2026.130542](https://doi.org/10.1016/j.jenvman.2026.130542)
 
 ---
 
@@ -48,8 +49,8 @@ what the authors produced.
 - **Archive:** [10.5281/zenodo.21629264](https://doi.org/10.5281/zenodo.21629264) — concept
   DOI, always resolves to the latest version
 
-Cite the Zenodo DOI rather than the repository URL. It is permanent, whereas a repository can
-be renamed, transferred or deleted.
+Cite the article, and the Zenodo DOI rather than the repository URL. The DOI is permanent,
+whereas a repository can be renamed, transferred or deleted.
 
 The only thing not tracked is `results/intermediate/`, 248 MB of working `.gph` graph panels
 that `run.do` regenerates and that contain nothing not already in `results/figures/`.
@@ -236,6 +237,21 @@ estimation of park employment using distance to the initial project village as a
 tests on pre-treatment years, a Hansen 10% canopy threshold branch, inverse-probability-weighted
 specifications, a village-level forest-cover analysis, and a feasibility check against the JRC
 Tropical Moist Forest product. `docs/crosswalk.md` records these.
+
+## Citation
+
+If you use this package, please cite both the article and the deposit.
+
+> Steimanis, I., Vorlaufer, T., and Vollan, B. (2026). A terminated REDD+ project in
+> Mozambique: Mitigation underperformance, lasting local benefits. *Journal of Environmental
+> Management*. <https://doi.org/10.1016/j.jenvman.2026.130542>
+
+> Steimanis, I., Vorlaufer, T., and Vollan, B. (2026). *Replication package for "A terminated
+> REDD+ project in Mozambique: Mitigation underperformance, lasting local benefits"*. Zenodo.
+> <https://doi.org/10.5281/zenodo.21629264>
+
+`CITATION.cff` carries the same information in machine-readable form; GitHub renders it as a
+"Cite this repository" button.
 
 ## Licence
 
