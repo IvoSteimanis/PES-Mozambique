@@ -11,7 +11,7 @@ Ivo Steimanis<sup>a,\*</sup>, Tobias Vorlaufer<sup>b</sup>, Björn Vollan<sup>a<
 
 ORCID: IS [0000-0002-8550-4675](https://orcid.org/0000-0002-8550-4675) · TV [0000-0002-1586-5715](https://orcid.org/0000-0002-1586-5715) · BV [0000-0002-5592-4185](https://orcid.org/0000-0002-5592-4185)
 
-Published in the *Journal of Environmental Management*.
+Accepted for publication in the *Journal of Environmental Management*.
 
 ---
 
@@ -40,7 +40,8 @@ produces it.
 Code is on GitHub; the data are on Zenodo because they exceed GitHub's file-size limits.
 
 - Code: <https://github.com/IvoSteimanis/PES-Mozambique>
-- Data: `https://doi.org/10.5281/zenodo.<ID>` — **Zenodo deposit pending; fill in before release**
+- Data: `https://doi.org/10.5281/zenodo.<ID>` — Zenodo concept DOI, resolves to the latest
+  version. **Deposit pending; DOI to be filled in.**
 
 Download both, then unpack the Zenodo archive into the repository root so that `data/` and
 `processed/` sit next to `run.do`.

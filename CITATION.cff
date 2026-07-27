@@ -44,7 +44,7 @@ keywords:
   - carbon offsets
   - agroforestry
 license: BSD-3-Clause
-version: 0.9.0
+version: 1.0.0
 date-released: '2026-07-27'
 preferred-citation:
   type: article
@@ -63,3 +63,4 @@ preferred-citation:
       orcid: 'https://orcid.org/0000-0002-5592-4185'
   journal: Journal of Environmental Management
   year: 2026
+  status: in-press
