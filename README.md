@@ -237,9 +237,21 @@ Tropical Moist Forest product. `docs/crosswalk.md` records these.
 
 ## Licence
 
-Code (`scripts/`, `run.do`) is released under the Modified BSD Licence; see
-`LICENSE-code.txt`. Data (`data/`, `processed/`) are released under CC BY 4.0; see
-`LICENSE-data.txt`. If you use either, please cite the paper.
+The package as a whole is released under **CC BY 4.0**, which is the licence recorded on the
+Zenodo deposit. Attribution is the only condition: cite the paper and the deposit.
+
+Within the package two licences apply, because a single licence does not suit both parts:
+
+- **Data** (`data/`, `processed/`): CC BY 4.0. See `LICENSE-data.txt`, which also sets out
+  the condition that the de-identified survey data must not be used to re-identify
+  respondents or the study villages.
+- **Code** (`scripts/`, `run.do`): Modified BSD Licence. See `LICENSE-code.txt`. CC BY is not
+  written for software, so the code additionally carries BSD terms, which supply the warranty
+  disclaimer that CC BY lacks. BSD is the more permissive of the two, so this adds no
+  restriction beyond attribution.
+
+The vendored Stata add-ons in `scripts/libraries/stata` are third-party packages redistributed
+under their own licences; see the individual package files.
 
 ## Funding
 
