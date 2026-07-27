@@ -1,0 +1,13 @@
+# Generated output. Everything here is reproduced by run.do.
+results/
+scripts/logs/*.log.txt
+run.log
+
+# Data lives on Zenodo, not in the repository (see README.md).
+processed/*.dta
+data/**/*.dta
+
+# OS and editor cruft
+desktop.ini
+.DS_Store
+*.tmp

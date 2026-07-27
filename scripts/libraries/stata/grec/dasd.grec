@@ -1,0 +1,141 @@
+StataFileTM:00001:01100:GREC:                          :
+00007:00007:00001:
+*! classname: twowaygraph_g
+*! family: twoway
+*! date:  6 Mar 2023
+*! time: 12:46:01
+*! graph_scheme: s1mono
+*! naturallywhite: 1
+*! end
+
+// File created by Graph Editor Recorder.
+// Edit only if you know what you are doing.
+
+.plotregion1.plot3.style.editstyle area(shadestyle(color(green))) editcopy
+.plotregion1.plot3.style.editstyle area(linestyle(color(green))) editcopy
+.plotregion1.plot3.style.editstyle area(linestyle(color("%0"))) editcopy
+.plotregion1.plot3.style.editstyle area(shadestyle(color("%0"))) editcopy
+.plotregion1.plot3.style.editstyle area(shadestyle(intensity(60))) editcopy
+// plot3 edits
+
+.plotregion1.plot3.style.editstyle area(shadestyle(color(green))) editcopy
+.plotregion1.plot3.style.editstyle area(linestyle(color(green))) editcopy
+// plot3 color
+
+.plotregion1.plot3.style.editstyle area(linestyle(color("%100"))) editcopy
+.plotregion1.plot3.style.editstyle area(shadestyle(color("%100"))) editcopy
+// plot3 color
+
+.plotregion1.plot3.style.editstyle area(shadestyle(color(green))) editcopy
+.plotregion1.plot3.style.editstyle area(linestyle(color(green))) editcopy
+.plotregion1.plot3.style.editstyle area(linestyle(width(none))) editcopy
+// plot3 edits
+
+// plot3 edits
+
+.plotregion1.plot4.style.editstyle area(shadestyle(color(blue))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(color(blue))) editcopy
+.plotregion1.plot4.style.editstyle area(shadestyle(intensity(60))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(width(none))) editcopy
+// plot4 edits
+
+.plotregion1.plot4.style.editstyle area(linestyle(color("%50"))) editcopy
+.plotregion1.plot4.style.editstyle area(shadestyle(color("%50"))) editcopy
+// plot4 color
+
+.plotregion1.plot4.style.editstyle area(shadestyle(color(blue))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(color(blue))) editcopy
+.plotregion1.plot4.style.editstyle area(shadestyle(intensity(100))) editcopy
+// plot4 edits
+
+.plotregion1.plot4.style.editstyle area(shadestyle(color(purple))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(color(purple))) editcopy
+// plot4 color
+
+.plotregion1.plot4.style.editstyle area(shadestyle(color(gs8))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(color(gs8))) editcopy
+// plot4 color
+
+.plotregion1.plot4.style.editstyle area(shadestyle(intensity(30))) editcopy
+// plot4 intensity
+
+// plot4 intensity
+
+.plotregion1.plot1.style.editstyle area(shadestyle(color(lime))) editcopy
+// plot1 color
+
+.plotregion1.plot1.style.editstyle area(linestyle(width(none))) editcopy
+// plot1 width
+
+.legend.plotregion1.label[4].draw_view.setstyle, style(no)
+// label[4] edits
+
+.legend.plotregion1.key[4].draw_view.setstyle, style(no)
+// key[4] edits
+
+.plotregion1.plot1.style.editstyle area(shadestyle(color(ltblue))) editcopy
+// plot1 color
+
+// plot1 color
+
+.plotregion1.plot4.style.editstyle area(linestyle(color("%100"))) editcopy
+.plotregion1.plot4.style.editstyle area(shadestyle(color("%100"))) editcopy
+.plotregion1.plot4.style.editstyle area(shadestyle(intensity(100))) editcopy
+// plot4 edits
+
+.plotregion1.plot4.style.editstyle area(shadestyle(color(gs14))) editcopy
+.plotregion1.plot4.style.editstyle area(linestyle(color(gs14))) editcopy
+// plot4 color
+
+// plot4 color
+
+// key[1] color
+
+// key[1] color
+
+.legend.plotregion1.key[1].view.style.editstyle area(shadestyle(color(cyan))) editcopy
+.legend.plotregion1.key[1].view.style.editstyle area(linestyle(color(cyan))) editcopy
+// view color
+
+// key[1] color
+
+// key[1] color
+
+.legend.plotregion1.key[1].view.style.editstyle area(linestyle(width(none))) editcopy
+// view width
+
+// key[1] width
+
+// key[1] width
+
+.legend.plotregion1.key[1].view.style.editstyle area(shadestyle(color(blue))) editcopy
+.legend.plotregion1.key[1].view.style.editstyle area(linestyle(color(blue))) editcopy
+// view color
+
+// key[1] color
+
+// key[1] color
+
+// view color
+
+// key[2] color
+
+// key[2] color
+
+.legend.plotregion1.key[2].view.style.editstyle area(shadestyle(color(red))) editcopy
+.legend.plotregion1.key[2].view.style.editstyle area(linestyle(color(red))) editcopy
+// view color
+
+// key[2] color
+
+// key[2] color
+
+// view color
+
+.plotregion1.plot1.style.editstyle area(shadestyle(color(white))) editcopy
+// plot1 color
+
+// plot1 color
+
+
+// <end>

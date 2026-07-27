@@ -1,0 +1,1610 @@
+* 00000047
+*! version 1.0.0
+* Do not erase or edit this file
+* It is used by Stata to track the ado and help
+* files you have installed.
+
+S http://www.stata.com/users/vwiggins
+N grc1leg.pkg
+D  6 Jan 2022
+U 1
+d grc1leg.  Combine graphs into one graph with a common legend.
+d Program by Vince Wiggins, StataCorp <vwiggins@@stata.com>.
+d Statalist distribution, 16 June 2003.
+d 
+d Exactly like -graph combine- but shows a single common legend for all
+d combined graphs.
+d 
+d Distribution-Date: 02jun2010
+f g\grc1leg.ado
+f g\grc1leg.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N catplot.pkg
+D  6 Jan 2022
+U 2
+d 'CATPLOT': module for plots of frequencies, fractions or percents of categorical data
+d 
+d catplot shows frequencies (or optionally fractions or percents)
+d of the categories of one, two or three categorical variables. The
+d first named variable is innermost on the display; that is, its
+d categories vary fastest. catplot is a wrapper for graph hbar
+d (default) or graph bar or graph dot. The files catplot_old.* are
+d files for the original 2003 version of catplot: to use fix the
+d names by removing "_old".
+d 
+d KW: graphics
+d KW: categorical data
+d KW: bar charts
+d KW: dot charts
+d 
+d Requires: Stata version 8.0
+d 
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email  N.J.Cox@@durham.ac.uk
+d 
+d Distribution-Date: 20101221
+d 
+f c\catplot.ado
+f c\catplot.hlp
+f c\catplot_old.ado
+f c\catplot_old.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N cibar.pkg
+D  6 Jan 2022
+U 3
+d 'CIBAR': module to plot bar graphs and confidence intervals over groups
+d 
+d  cibar plots bars and confidence intervals of the mean of a
+d variable over at least one group.  cibar aims at drawing graphs
+d that resemble graphs created by graph bar varname, over(varname)
+d asyvar,  adding confidence intervals to the bars. In order to do
+d so, cibar uses Stata's twoway bar and twoway rcap. cibar shows
+d graphically the differences in the mean of a variable depending
+d on the categories of other variables.
+d 
+d KW: bar graph
+d KW: graphics
+d KW: confidence intervals
+d KW: means
+d 
+d Requires: Stata version 13
+d 
+d Distribution-Date: 20190624
+d 
+d Author: Alexander Staudt, N/A
+d Support: email staudtlex@@live.de
+d 
+f c\cibar.ado
+f c\cibar.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N coefplot.pkg
+D  6 Jan 2022
+U 4
+d 'COEFPLOT': module to plot regression coefficients and other results
+d 
+d   coefplot plots results from estimation commands or Stata
+d matrices. Results from multiple models or matrices can be
+d combined in a single graph. The default behavior of coefplot is
+d to draw markers for coefficients and horizontal spikes for
+d confidence intervals. However, coefplot can also produce various
+d other types of graphs.
+d 
+d KW: graphics
+d KW: coefficients
+d KW: estimation
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20211123
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\coefplot.ado
+f c\coefplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/e
+N estout.pkg
+D  6 Jan 2022
+U 5
+d 'ESTOUT': module to make regression tables
+d 
+d  estout produces a table of regression results from one or
+d several models for use with spreadsheets, LaTeX, HTML, or a
+d word-processor table. eststo stores a quick copy of the active
+d estimation results for later tabulation. esttab is a wrapper for
+d estout. It displays a pretty looking publication-style regression
+d table without much typing. estadd adds additional results to the
+d e()-returns for one or several models previously fitted and
+d stored. This package subsumes the previously circulated esto,
+d esta, estadd,  and estadd_plus. An earlier version of estout is
+d available  as estout1.
+d 
+d KW: estimates
+d KW: LaTeX
+d KW: HTML
+d KW: word processor
+d KW: output
+d 
+d Requires: Stata version 8.2
+d 
+d Distribution-Date: 20210523
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f _\_eststo.ado
+f _\_eststo.hlp
+f e\estadd.ado
+f e\estadd.hlp
+f e\estout.ado
+f e\estout.hlp
+f e\eststo.ado
+f e\eststo.hlp
+f e\estpost.ado
+f e\estpost.hlp
+f e\esttab.ado
+f e\esttab.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/o
+N outreg2.pkg
+D  6 Jan 2022
+U 6
+d 'OUTREG2': module to arrange regression outputs into an illustrative table
+d 
+d  outreg2 provides a fast and easy way to produce an illustrative
+d table  of regression outputs. The regression outputs are produced
+d piecemeal and are  difficult to compare without some type of
+d rearrangement. outreg2  automates this process by concatenating
+d the successive regression outputs in a  vertical format. The
+d resulting table is saved to the disk in ASCII  format, which can
+d be read by other programs. outreg2 thus facilitates  the
+d convertion of regression outputs to a standard format suitable
+d for  inclusion in a scholarly publication. The functionality of
+d outreg2 is based on the earlier package outreg,  by John Luke
+d Gallup. Unlike outreg, outreg2 is capable of writing LaTeX-format
+d tables, as well as ASCII, MS Word and MS Excel.
+d 
+d KW: regression
+d KW: output
+d KW: tables
+d KW: tab-delimited output
+d KW: LaTeX
+d KW: Word
+d KW: Excel
+d 
+d Requires: Stata version 7
+d 
+d Distribution-Date: 20140817
+d 
+d Author: Roy Wada
+d Support: email roywada@@hotmail.com
+d 
+f o\outreg2.ado
+f o\outreg2_prf.ado
+f o\outreg2.hlp
+f s\shellout.ado
+f s\shellout.hlp
+f s\seeout.ado
+f s\seeout.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N schemepack.pkg
+D  6 Jan 2022
+U 7
+d 'SCHEMEPACK': module providing ready-to-use graph schemes
+d 
+d  schemepack releases a suite of graph schemes as part of The
+d Stata Guide (https://medium.com/the-stata-guide) series. See the
+d help file (help schemepack) for details after installation.
+d 
+d KW: Stata
+d KW: scheme
+d KW: graphs
+d 
+d Requires: Stata version 15
+d 
+d Distribution-Date: 20211116
+d 
+d Author: Asjad Naqvi, WU Vienna
+d Support: email asjadnaqvi@@gmail.com
+d 
+f s\schemepack.sthlp
+f s\scheme-black_brbg.scheme
+f s\scheme-black_cividis.scheme
+f s\scheme-black_hue.scheme
+f s\scheme-black_jet.scheme
+f s\scheme-black_piyg.scheme
+f s\scheme-black_ptol.scheme
+f s\scheme-black_set3.scheme
+f s\scheme-black_tableau.scheme
+f s\scheme-black_viridis.scheme
+f s\scheme-black_w3d.scheme
+f s\scheme-gg_brbg.scheme
+f s\scheme-gg_cividis.scheme
+f s\scheme-gg_hue.scheme
+f s\scheme-gg_jet.scheme
+f s\scheme-gg_piyg.scheme
+f s\scheme-gg_ptol.scheme
+f s\scheme-gg_set3.scheme
+f s\scheme-gg_tableau.scheme
+f s\scheme-gg_viridis.scheme
+f s\scheme-gg_w3d.scheme
+f s\scheme-neon.scheme
+f s\scheme-rainbow.scheme
+f s\scheme-swift_red.scheme
+f s\scheme-white_brbg.scheme
+f s\scheme-white_cividis.scheme
+f s\scheme-white_hue.scheme
+f s\scheme-white_jet.scheme
+f s\scheme-white_piyg.scheme
+f s\scheme-white_ptol.scheme
+f s\scheme-white_set3.scheme
+f s\scheme-white_tableau.scheme
+f s\scheme-white_viridis.scheme
+f s\scheme-white_w3d.scheme
+e
+S http://fmwww.bc.edu/repec/bocode/i
+N ietoolkit.pkg
+D  6 Jan 2022
+U 8
+d 'IETOOLKIT': module providing commands specially developed for Impact Evaluations
+d 
+d  ietookit provides a set of commands that address different
+d aspects of data management and data analysis in relation to
+d Impact Evaluations. The list of commands will be extended
+d continuously, and suggestions on new commands are highly
+d appreciated. Some of the commands are related to standardized
+d practices developed at the World Bank’s unit for Impact
+d Evaluations (DIME) and might not apply to practices adopted at
+d other institutions. For these commands, the corresponding help
+d files provide justifications for the standardized practices
+d applied. ieduplicates and iecompdup are useful tools to identify
+d and correct for duplicates. iebaltab is a tool for multiple
+d treatment arm balance tables. ieboilstart standardizes the
+d boilerplate code at the top of all do-files. iegraph produces
+d graphs based on common impact evaluation regression models. See
+d https://github.com/worldbank/ietoolkit for more details.
+d 
+d KW: impact evaluations
+d KW: data management
+d KW: survey data
+d KW: data analysis
+d KW: balance tables
+d KW: difference-in-differences
+d KW: matching
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20191108
+d 
+d Author: DIME Analytics, The World Bank, DECIE
+d Support: email  lcardosodeandrad@@worldbank.org
+d 
+f i\ietoolkit.ado
+f i\ietoolkit.sthlp
+f i\iebaltab.ado
+f i\iebaltab.sthlp
+f i\ieboilsave.ado
+f i\ieboilsave.sthlp
+f i\ieboilstart.ado
+f i\ieboilstart.sthlp
+f i\ieddtab.ado
+f i\ieddtab.sthlp
+f i\iedropone.ado
+f i\iedropone.sthlp
+f i\iefolder.ado
+f i\iefolder.sthlp
+f i\iegitaddmd.ado
+f i\iegitaddmd.sthlp
+f i\iegraph.ado
+f i\iegraph.sthlp
+f i\iekdensity.ado
+f i\iekdensity.sthlp
+f i\iematch.ado
+f i\iematch.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N mylabels.pkg
+D  6 Jan 2022
+U 9
+d 'MYLABELS': module for axis labels or ticks on transformed scales or for daily dates
+d 
+d mylabels and myticks generate axis labels and ticks on
+d transformed scales. Their use is best explained by example. You
+d draw a graph and one axis is on a transformed square root scale.
+d You wish the axis labels to show untransformed values. For some
+d values this is easy; for example, ylabel(0 1 2 "4" 3 "9" 4 "16" 5
+d "25") says use "4" as label for 2, and so forth. For other values
+d and/or other transformations the conversion may be more difficult
+d to do in your head. The idea behind mylabels is that you feed it
+d the numeric labels you want shown and the transformation being
+d used. It will then place the appropriate specification in a local
+d macro which you name. You may then use that local macro as part
+d of a later graphics command. The idea behind myticks is similar.
+d  mydays displays a formatted list of specified days that lie
+d within the range of a tsset daily date variable describing a time
+d series and puts the numeric version of that list in a specified
+d local macro. The result may be useful for specifying axis label
+d or tick positions on graphs of time series. mydays requires Stata
+d 9.0.
+d 
+d KW: graphics
+d KW: transformations
+d KW: axis labels
+d KW: axis ticks
+d KW: daily dates
+d KW: time series
+d 
+d Requires: Stata version 8.0 (9.0 for mydays)
+d 
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Author: Scott Merryman
+d Support: email scott.merryman@@gmail.com
+d 
+d Distribution-Date: 20160923
+d 
+f m\mylabels.ado
+f m\mylabels.sthlp
+f m\myticks.ado
+f m\myticks.hlp
+f m\mydays.ado
+f m\mydays.hlp
+e
+S https://raw.githubusercontent.com/worldbank/ietoolkit/master/src
+N ietoolkit.pkg
+D  2 Mar 2022
+U 10
+d iefieldkit. DIME Analytics iefieldkit public beta
+d DIME Analytics, World Bank Group, Development Economics Research
+f i\iebaltab.ado
+f i\ieboilsave.ado
+f i\ieboilstart.ado
+f i\ieddtab.ado
+f i\iedropone.ado
+f i\iefolder.ado
+f i\iegitaddmd.ado
+f i\iegraph.ado
+f i\iematch.ado
+f i\ietoolkit.ado
+f i\iebaltab.sthlp
+f i\ieboilsave.sthlp
+f i\ieboilstart.sthlp
+f i\ieddtab.sthlp
+f i\iedropone.sthlp
+f i\iefolder.sthlp
+f i\iegitaddmd.sthlp
+f i\iegraph.sthlp
+f i\iematch.sthlp
+f i\ietoolkit.sthlp
+e
+S https://raw.githubusercontent.com/benjann/palettes/master
+N palettes.pkg
+D  2 Mar 2022
+U 11
+d palettes: module providing color palettes, symbol palettes, and line pattern palettes
+d 
+d Author: Ben Jann, University of Bern, ben.jann@soz.unibe.ch
+d 
+d Distribution-Date: 20200527
+f c\colorpalette.ado
+f c\colorpalette.sthlp
+f s\symbolpalette.hlp
+f c\colorpalette9.hlp
+f s\symbolpalette.ado
+f c\colorpalette9.ado
+f p\palettes.hlp
+f l\linepalette.ado
+f l\linepalette.hlp
+e
+S https://raw.githubusercontent.com/benjann/colrspace/master
+N colrspace.pkg
+D  2 Mar 2022
+U 12
+d colrspace: module providing a class-based color management system in Mata
+d 
+d Author: Ben Jann, University of Bern, ben.jann@soz.unibe.ch
+d 
+d Distribution-Date: 20200606
+f c\colrspace_library_generators.sthlp
+f c\colrspace_library_matplotlib.sthlp
+f c\colrspace_library_namedcolors.sthlp
+f l\lcolrspace.mlib
+f c\colrspace_source.sthlp
+f c\colrspace_library_palettes.sthlp
+f c\colrspace.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/d
+N distplot.pkg
+D  2 Mar 2022
+U 13
+d 'DISTPLOT': module to generate distribution function plot
+d 
+d distplot produces a plot of cumulative distribution function(s).
+d This shows the proportion (or if desired the frequency) of values
+d  less than or equal to each value. With the reverse option,
+d distplot produces a plot of the complementary function.  This
+d version is for Stata 8 or later.  Also included in this package
+d are distplot7 files, a clone of the  last version of this program
+d written for Stata 7.
+d 
+d KW: graphics
+d KW: frequency distributions
+d KW: cumulative distribution function
+d 
+d Requires: Stata version 8.0 (7.0 for distplot7)
+d 
+d 
+d Author: Nicholas J. Cox, University of Durham
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Distribution-Date: 20170916
+d 
+f d\distplot.ado
+f d\distplot.sthlp
+f d\distplot7.ado
+f d\distplot7.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N geo2xy.pkg
+D  2 Mar 2022
+U 14
+d 'GEO2XY': module to convert latitude and longitude to xy using map projections
+d 
+d  geo2xy converts geographic latitude and longitude to cartesian
+d coordinates (x,y) using map projection transformations. The
+d default projection is a Web Mercator, which is the same used by
+d most web mapping applications (Google Maps, Bing Maps, etc.). As
+d an option, -geo2xy- can generate Tissot's indicatrices (grid of
+d circles) which, when overlaid on a map of the projected
+d coordinates, help visualize the distortions of the chosen
+d projection. With projected coordinates, high quality maps can be
+d produced using standard Stata graph commands or with user-written
+d commands like -spmap-.
+d 
+d KW: map projection
+d KW: shapefiles
+d KW:  latitude and longitude
+d KW:  coordinates
+d KW: shp2dta
+d KW: spmap
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20170608
+d 
+d Author: Robert Picard
+d Support: email picard@@netbox.com
+d 
+d Author: Michael Stepner
+d Support: email stepner@@mit.edu
+d 
+f g\geo2xy.ado
+f g\geo2xy_albers_sphere.hlp
+f g\geo2xy_albers.hlp
+f g\geo2xy_equidistant_cylindrical.hlp
+f g\geo2xy_fun_with_maps.hlp
+f g\geo2xy_lambert_sphere.hlp
+f g\geo2xy_mercator_sphere.hlp
+f g\geo2xy_mercator.hlp
+f g\geo2xy_picard.hlp
+f g\geo2xy_web_mercator.hlp
+f g\geo2xy.hlp
+f g\geo2xy_lambert_sphere.ado
+f g\geo2xy_run.ado
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N grstyle.pkg
+D  2 Mar 2022
+U 15
+d 'GRSTYLE': module to customize the overall look of graphs
+d 
+d  grstyle allows you to customize the overall look of graphs from
+d within a do-file without having to fiddle around with external
+d scheme files. The advantage of grstyle over manually editing a
+d scheme file is that everything needed to reproduce your graphs
+d can be included in a single do-file.
+d 
+d KW: graphics
+d KW: scheme files
+d KW: custom graphics
+d KW: plot
+d 
+d Requires: Stata version 9.2 and palettes from SSC (q.v.)
+d 
+d Distribution-Date: 20200919
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f g\grstyle.ado
+f g\grstyle.hlp
+f g\grstyle_set.ado
+f g\grstyle_set.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N mif2dta.pkg
+D  2 Mar 2022
+U 16
+d 'MIF2DTA': module convert MapInfo Interchange Format boundary files to Stata boundary files
+d 
+d   This is a program that converts MapInfo Interchange
+d Format boundary files      into Stata boundary files to be used
+d with the latest release of the -tmap-      package.
+d 
+d KW: maps
+d KW: MapInfo
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20080314
+d 
+d Author: Maurizio Pisati, University of Milano Bicocca - Italy
+d Support: email maurizio.pisati@@unimib.it
+d 
+f m\mif2dta.ado
+f m\mif2dta.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N moss.pkg
+D  2 Mar 2022
+U 17
+d 'MOSS': module to find multiple occurrences of substrings
+d 
+d  moss finds occurrences of substrings matching a pattern in a
+d given string variable. Depending on what is sought and what is
+d found, variables are created giving the count of occurrences
+d (always); the positions of occurrences (whenever any are found);
+d and the exact substrings found (when a regular expression defines
+d a subexpression to be returned).
+d 
+d KW:  data management
+d KW: strings
+d KW: substrings
+d KW: regular expressions
+d 
+d Requires: Stata version 9
+d 
+d Distribution-Date: 20160429
+d 
+d Author: Robert Picard, Durham University
+d Support: email picard@@netbox.com
+d 
+d Author: Nicholas J. Cox
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+f m\moss.ado
+f m\moss.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N shp2dta.pkg
+D  2 Mar 2022
+U 18
+d 'SHP2DTA': module to converts shape boundary files to Stata datasets
+d 
+d  shp2dta reads a shape (.shp) and dbase (.dbf) file from disk and
+d converts them into Stata datasets.  The shape and dbase files
+d must have the same name and be saved in the same directory.  The
+d user-written command tmap can use the two datasets that shp2dta
+d creates. shp2dta can convert only polygon shapefiles (type 5).
+d 
+d KW: tmap
+d KW: shape files
+d KW: maps
+d 
+d Requires: Stata version 9.1
+d 
+d Distribution-Date: 20150717
+d 
+d Author: Kevin Crow , StataCorp LP
+d Support: email kcrow@@stata.com
+d 
+f s\shp2dta.ado
+f s\shp2dta.hlp
+f s\shp2dta.dlg
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N spmap.pkg
+D  2 Mar 2022
+U 19
+d 'SPMAP': module to visualize spatial data
+d 
+d   spmap is aimed at visualizing several kinds of spatial data,
+d and is particularly suited for drawing thematic maps and
+d displaying the results of spatial data analyses. Proper
+d specification of spmap options and suboptions, combined with the
+d availability of properly formatted spatial data, allows the user
+d to draw several kinds of maps, including choropleth maps,
+d proportional symbol maps, pin maps, pie chart maps, and
+d noncontiguous area cartograms. spmap completely supersedes its
+d predecessor tmap.
+d 
+d KW: maps
+d KW: thematic
+d KW: spatial data
+d KW: choropleth
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20180118
+d 
+d Author: Maurizio Pisati, University of Milano Bicocca - Italy
+d Support: email maurizio.pisati@@unimib.it
+d 
+f s\spmap.ado
+f s\spmap.hlp
+f s\spmap_arrow.ado
+f s\spmap_color.ado
+f s\spmap_diagram.ado
+f s\spmap_examples.ado
+f s\spmap_label.ado
+f s\spmap_line.ado
+f s\spmap_point.ado
+f s\spmap_polygon.ado
+f s\spmap_psl.ado
+f s\spmap_scalebar.ado
+e
+S https://raw.githubusercontent.com/benjann/palettes/master
+N palettes.pkg
+D 22 Aug 2022
+U 20
+d palettes: module providing color palettes, symbol palettes, and line pattern palettes
+d 
+d Author: Ben Jann, University of Bern, ben.jann@unibe.ch
+d 
+d Distribution-Date: 20220602
+f c\colorpalette.ado
+f c\colorcheck.ado
+f c\colorpalette.sthlp
+f c\colorcheck.sthlp
+f s\symbolpalette.hlp
+f c\colorpalette9.hlp
+f s\symbolpalette.ado
+f c\colorpalette9.ado
+f p\palettes.hlp
+f l\linepalette.ado
+f l\linepalette.hlp
+e
+S https://raw.githubusercontent.com/benjann/colrspace/master
+N colrspace.pkg
+D 22 Aug 2022
+U 21
+d colrspace: module providing a class-based color management system in Mata
+d 
+d Author: Ben Jann, University of Bern, ben.jann@unibe.ch
+d 
+d Distribution-Date: 20220530
+f c\colrspace_library_generators.sthlp
+f c\colrspace_library_namedcolors.sthlp
+f l\lcolrspace.mlib
+f c\colrspace_library_rgbmaps.sthlp
+f c\colrspace_source.sthlp
+f c\colrspace_library_lsmaps.sthlp
+f c\colrspace_library_palettes.sthlp
+f c\colrspace.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N coefplot.pkg
+D 22 Aug 2022
+U 22
+d 'COEFPLOT': module to plot regression coefficients and other results
+d 
+d   coefplot plots results from estimation commands or Stata
+d matrices. Results from multiple models or matrices can be
+d combined in a single graph. The default behavior of coefplot is
+d to draw markers for coefficients and horizontal spikes for
+d confidence intervals. However, coefplot can also produce various
+d other types of graphs.
+d 
+d KW: graphics
+d KW: coefficients
+d KW: estimation
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20220421
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\coefplot.ado
+f c\coefplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/e
+N estout.pkg
+D 22 Aug 2022
+U 23
+d 'ESTOUT': module to make regression tables
+d 
+d  estout produces a table of regression results from one or
+d several models for use with spreadsheets, LaTeX, HTML, or a
+d word-processor table. eststo stores a quick copy of the active
+d estimation results for later tabulation. esttab is a wrapper for
+d estout. It displays a pretty looking publication-style regression
+d table without much typing. estadd adds additional results to the
+d e()-returns for one or several models previously fitted and
+d stored. This package subsumes the previously circulated esto,
+d esta, estadd,  and estadd_plus. An earlier version of estout is
+d available  as estout1.
+d 
+d KW: estimates
+d KW: LaTeX
+d KW: HTML
+d KW: word processor
+d KW: output
+d 
+d Requires: Stata version 8.2
+d 
+d Distribution-Date: 20220326
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f _\_eststo.ado
+f _\_eststo.hlp
+f e\estadd.ado
+f e\estadd.hlp
+f e\estout.ado
+f e\estout.hlp
+f e\eststo.ado
+f e\eststo.hlp
+f e\estpost.ado
+f e\estpost.hlp
+f e\esttab.ado
+f e\esttab.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/k
+N kobo2stata.pkg
+D 22 Aug 2022
+U 24
+d 'KOBO2STATA': module to create labelled Stata datasets from KoboToolbox
+d 
+d     kobo2stata combines the information contained in the raw data
+d file and the XLSForm, and creates labelled Stata datasets. The
+d main focus is on applying the variable labels and value labels in
+d the XLSForm to the data. There are also some secondary
+d functions, e.g. the removal of HTML tags from labels.  Please
+d read the    important remarks below on generating the input files
+d in KoboToolbox.
+d 
+d KW: data management
+d KW: Kobo Toolbox
+d 
+d Requires: Stata version 14
+d 
+d Distribution-Date: 20210723
+d 
+d Author:  Felix Schmieding
+d Support: email kobo2stata@@gmail.com
+d 
+f k\kobo2stata.ado
+f k\kobo2stata.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N mylabels.pkg
+D 22 Aug 2022
+U 25
+d 'MYLABELS': module for axis labels or ticks on transformed scales or for daily dates
+d 
+d  mylabels and myticks generate axis labels and ticks on
+d transformed scales. Their use is best explained by example. You
+d draw a graph and one axis is on a transformed square root scale.
+d You wish the axis labels to show untransformed values. For some
+d values this is easy; for example, ylabel(0 1 2 "4" 3 "9" 4 "16" 5
+d "25") says use "4" as label for 2, and so forth. For other values
+d and/or other transformations the conversion may be more difficult
+d to do in your head. The idea behind mylabels is that you feed it
+d the numeric labels you want shown and the transformation being
+d used. It will then place the appropriate specification in a local
+d macro which you name. You may then use that local macro as part
+d of a later graphics command. The idea behind myticks is similar.
+d  mydays displays a formatted list of specified days that lie
+d within the range of a tsset daily date variable describing a time
+d series and puts the numeric version of that list in a specified
+d local macro. The result may be useful for specifying axis label
+d or tick positions on graphs of time series. mydays requires Stata
+d 9.0.
+d 
+d KW: graphics
+d KW: transformations
+d KW: axis labels
+d KW: axis ticks
+d KW: daily dates
+d KW: time series
+d 
+d Requires: Stata version 8.0 (9.0 for mydays)
+d 
+d Distribution-Date: 20220515
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Author: Scott Merryman
+d Support: email scott.merryman@@gmail.com
+d 
+f m\mylabels.ado
+f m\mylabels.sthlp
+f m\myticks.ado
+f m\myticks.hlp
+f m\mydays.ado
+f m\mydays.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N missings.pkg
+D 23 Aug 2022
+U 26
+d 'MISSINGS': module to manage missing values
+d 
+d  missings includes utility commands for managing variables  that
+d (may) have missing values, which variously report, list  and
+d tabulate missing values; generate a variable containing  numbers
+d of missing values; and drop variables and/or observations that
+d are all missing.   missings is intended to unite and supersede
+d the author's previous commands nmissing and dropmiss.
+d 
+d KW: missings
+d KW: drop
+d KW: data management
+d KW: missing values
+d 
+d Requires: Stata version 9
+d 
+d Distribution-Date: 20170511
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+f m\missings.ado
+f m\missings.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/w
+N winsor2.pkg
+D 24 Aug 2022
+U 27
+d 'WINSOR2': module to winsorize data
+d 
+d    winsor2 can winsorize a varlist, operate with the by prefix,
+d and offers a replace option.
+d 
+d KW: winsor
+d KW: winsorize
+d KW: data management
+d 
+d Requires: Stata version 8
+d 
+d Distribution-Date: 20201125
+d 
+d Author: Yujun Lian, Department of Finance, Sun Yat-Sen University, China
+d Support: email arlionn@@163.com
+d 
+f w\winsor2.ado
+f w\winsor2.sthlp
+e
+S https://raw.githubusercontent.com/worldbank/ietoolkit/master/src
+N ietoolkit.pkg
+D  2 Mar 2023
+U 28
+d iefieldkit. DIME Analytics iefieldkit public beta
+d DIME Analytics, World Bank Group, Development Economics Research
+f i\iebaltab.ado
+f i\ieboilstart.ado
+f i\ieddtab.ado
+f i\iedorep.ado
+f i\iedropone.ado
+f i\iefolder.ado
+f i\iegitaddmd.ado
+f i\iegraph.ado
+f i\iekdensity.ado
+f i\iematch.ado
+f i\iesave.ado
+f i\ietoolkit.ado
+f i\iebaltab.sthlp
+f i\ieboilstart.sthlp
+f i\ieddtab.sthlp
+f i\iedorep.sthlp
+f i\iedropone.sthlp
+f i\iefolder.sthlp
+f i\iegitaddmd.sthlp
+f i\iegraph.sthlp
+f i\iekdensity.sthlp
+f i\iematch.sthlp
+f i\iesave.sthlp
+f i\ietoolkit.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N coefplot.pkg
+D  2 Mar 2023
+U 29
+d 'COEFPLOT': module to plot regression coefficients and other results
+d 
+d   coefplot plots results from estimation commands or Stata
+d matrices. Results from multiple models or matrices can be
+d combined in a single graph. The default behavior of coefplot is
+d to draw markers for coefficients and horizontal spikes for
+d confidence intervals. However, coefplot can also produce various
+d other types of graphs.
+d 
+d KW: graphics
+d KW: coefficients
+d KW: estimation
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20230225
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\coefplot.ado
+f c\coefplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/e
+N estout.pkg
+D  2 Mar 2023
+U 30
+d 'ESTOUT': module to make regression tables
+d 
+d  estout produces a table of regression results from one or
+d several models for use with spreadsheets, LaTeX, HTML, or a
+d word-processor table. eststo stores a quick copy of the active
+d estimation results for later tabulation. esttab is a wrapper for
+d estout. It displays a pretty looking publication-style regression
+d table without much typing. estadd adds additional results to the
+d e()-returns for one or several models previously fitted and
+d stored. This package subsumes the previously circulated esto,
+d esta, estadd,  and estadd_plus. An earlier version of estout is
+d available  as estout1.
+d 
+d KW: estimates
+d KW: LaTeX
+d KW: HTML
+d KW: word processor
+d KW: output
+d 
+d Requires: Stata version 8.2
+d 
+d Distribution-Date: 20230212
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f _\_eststo.ado
+f _\_eststo.hlp
+f e\estadd.ado
+f e\estadd.hlp
+f e\estout.ado
+f e\estout.hlp
+f e\eststo.ado
+f e\eststo.hlp
+f e\estpost.ado
+f e\estpost.hlp
+f e\esttab.ado
+f e\esttab.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N missings.pkg
+D  2 Mar 2023
+U 31
+d 'MISSINGS': module to manage missing values
+d 
+d  missings includes utility commands for managing variables  that
+d (may) have missing values, which variously report, list  and
+d tabulate missing values; generate a variable containing  numbers
+d of missing values; and drop variables and/or observations that
+d are all missing.   missings is intended to unite and supersede
+d the author's previous commands nmissing and dropmiss.
+d 
+d KW: missings
+d KW: drop
+d KW: data management
+d KW: missing values
+d 
+d Requires: Stata version 12
+d 
+d Distribution-Date: 20170511
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+f m\missings.ado
+f m\missings.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/p
+N psmatch2.pkg
+D  2 Mar 2023
+U 32
+d 'PSMATCH2': module to perform full Mahalanobis and propensity score matching, common support graphing, and covariate imbalance testing
+d 
+d psmatch2 implements full Mahalanobis and propensity score
+d matching, common support graphing, and covariate imbalance
+d testing. This routine supersedes the previous 'psmatch' routine
+d of B. Sianesi. The April 2012 revision of pstest changes the
+d syntax of that command.
+d 
+d KW: propensity score
+d KW: matching
+d KW: treatment
+d 
+d Requires: Stata version 11
+d 
+d 
+d Author: Edwin Leuven, Ecole Nationale de la Statistique et Administration Economique (ENSAE)
+d Support: email edwin.leuven@@ensae.fr
+d 
+d Author: Barbara Sianesi, Institute for Fiscal Studies
+d Support: email barbara_s@@ifs.org.uk
+d 
+d Distribution-Date: 20180201
+d 
+f p\psmatch2.ado
+f p\psmatch2.sthlp
+f p\psmatch2.dlg
+f p\pstest.ado
+f p\pstest2.ado
+f p\pstest.sthlp
+f d\density2.ado
+f p\psgraph.ado
+f p\psgraph.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N schemepack.pkg
+D  2 Mar 2023
+U 33
+d 'SCHEMEPACK': module providing ready-to-use graph schemes
+d 
+d  schemepack releases a suite of graph schemes as part of The
+d Stata Guide (https://medium.com/the-stata-guide) series. See the
+d help file (help schemepack) for details after installation.
+d 
+d KW: Stata
+d KW: scheme
+d KW: graphs
+d 
+d Requires: Stata version 15
+d 
+d Distribution-Date: 20221111
+d 
+d Author: Asjad Naqvi, WU Vienna
+d Support: email asjadnaqvi@@gmail.com
+d 
+f s\schemepack.sthlp
+f s\scheme-black_brbg.scheme
+f s\scheme-black_cividis.scheme
+f s\scheme-black_hue.scheme
+f s\scheme-black_jet.scheme
+f s\scheme-black_piyg.scheme
+f s\scheme-black_ptol.scheme
+f s\scheme-black_set3.scheme
+f s\scheme-black_tableau.scheme
+f s\scheme-black_viridis.scheme
+f s\scheme-black_w3d.scheme
+f s\scheme-cblind1.scheme
+f s\scheme-gg_brbg.scheme
+f s\scheme-gg_cividis.scheme
+f s\scheme-gg_hue.scheme
+f s\scheme-gg_jet.scheme
+f s\scheme-gg_piyg.scheme
+f s\scheme-gg_ptol.scheme
+f s\scheme-gg_set3.scheme
+f s\scheme-gg_tableau.scheme
+f s\scheme-gg_viridis.scheme
+f s\scheme-gg_w3d.scheme
+f s\scheme-neon.scheme
+f s\scheme-rainbow.scheme
+f s\scheme-swift_red.scheme
+f s\scheme-tab1.scheme
+f s\scheme-tab2.scheme
+f s\scheme-tab3.scheme
+f s\scheme-ukraine.scheme
+f s\scheme-white_brbg.scheme
+f s\scheme-white_cividis.scheme
+f s\scheme-white_hue.scheme
+f s\scheme-white_jet.scheme
+f s\scheme-white_piyg.scheme
+f s\scheme-white_ptol.scheme
+f s\scheme-white_set3.scheme
+f s\scheme-white_tableau.scheme
+f s\scheme-white_viridis.scheme
+f s\scheme-white_w3d.scheme
+e
+S https://raw.githubusercontent.com/worldbank/ietoolkit/master/src
+N ietoolkit.pkg
+D  4 Jun 2024
+U 34
+d iefieldkit. DIME Analytics iefieldkit public beta
+d DIME Analytics, World Bank Group, Development Economics Research
+f i\iebaltab.ado
+f i\ieboilstart.ado
+f i\ieddtab.ado
+f i\iedorep.ado
+f i\iedropone.ado
+f i\iefolder.ado
+f i\iegitaddmd.ado
+f i\iegraph.ado
+f i\iekdensity.ado
+f i\iematch.ado
+f i\iesave.ado
+f i\ietoolkit.ado
+f i\iebaltab.sthlp
+f i\ieboilstart.sthlp
+f i\ieddtab.sthlp
+f i\iedorep.sthlp
+f i\iedropone.sthlp
+f i\iefolder.sthlp
+f i\iegitaddmd.sthlp
+f i\iegraph.sthlp
+f i\iekdensity.sthlp
+f i\iematch.sthlp
+f i\iesave.sthlp
+f i\ietoolkit.sthlp
+e
+S https://raw.githubusercontent.com/benjann/palettes/master
+N palettes.pkg
+D  4 Jun 2024
+U 35
+d palettes: module providing color palettes, symbol palettes, and line pattern palettes
+d 
+d Author: Ben Jann, University of Bern, ben.jann@unibe.ch
+d 
+d Distribution-Date: 20240523
+f c\colorpalette.ado
+f c\colorcheck.ado
+f c\colorpalette.sthlp
+f c\colorcheck.sthlp
+f s\symbolpalette.hlp
+f c\colorpalette9.hlp
+f s\symbolpalette.ado
+f c\colorpalette9.ado
+f p\palettes.hlp
+f l\linepalette.ado
+f l\linepalette.hlp
+e
+S https://raw.githubusercontent.com/benjann/colrspace/master
+N colrspace.pkg
+D  4 Jun 2024
+U 36
+d colrspace: module providing a class-based color management system in Mata
+d 
+d Author: Ben Jann, University of Bern, ben.jann@unibe.ch
+d 
+d Distribution-Date: 20240522
+f c\colrspace_library_generators.sthlp
+f c\colrspace_library_namedcolors.sthlp
+f l\lcolrspace.mlib
+f c\colrspace_library_rgbmaps.sthlp
+f c\colrspace_source.sthlp
+f c\colrspace_library_lsmaps.sthlp
+f c\colrspace_library_palettes.sthlp
+f c\colrspace.sthlp
+e
+S https://raw.githubusercontent.com/ryanedmundkessler/simultaneous_confidence_bands/master/ado
+N estimate_supt_critical_value.pkg
+D  4 Jun 2024
+U 37
+d estimate_supt_critical_value: Stata module for computing critical value underlying simultaneous sup-t confidence bands
+d 
+d Requires: Stata version 14
+d 
+d Distribution-Date: 01262019
+d 
+d Authors: Sergey Egiev, Ryan Kessler, Michael Sielski
+d Contact: ryan.edmund.kessler@gmail.com
+d 
+f e\estimate_supt_critical_value.ado
+f e\estimate_supt_critical_value.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/b
+N betterbar.pkg
+D  4 Jun 2024
+U 38
+d 'BETTERBAR': module to produce bar graphs with optional standard error bars and cross-group comparisons
+d 
+d  betterbar and betterbarci produce bar graphs with optional
+d standard error bars and cross-group comparisons.
+d 
+d KW: graphics
+d KW: bar graph
+d 
+d Requires: Stata version 13.1
+d 
+d Distribution-Date: 20200209
+d 
+d Author: Benjamin Daniels, World Bank
+d Support: email bbdaniels@@gmail.com
+d 
+f b\betterbar.ado
+f b\betterbar.sthlp
+f b\betterbarci.ado
+f b\betterbarci.sthlp
+e
+S http://digital.cgdev.org/doc/stata/MO/Misc
+N grc1leg2.pkg
+D  4 Jun 2024
+U 39
+d {cmd:grc1leg2}. Add a common legend to combined graphs.
+d {cmd:grc1leg2}, like {help graph combine}, arrays separately drawn
+d graphs as panels in a single combined graph.  Additionally
+d {cmd:grc1leg2} suppresses the legends in the individual graphs
+d and adds a common legend borrowed from one of them.
+d Options control several characteristics of the common legend
+d on the combined graph, including its precise placement.
+d Optionally {cmd:grc1leg2} also suppresses the xtitle, the ytitle
+d or the main title on the individual graphs and moves one of
+d any of these to the combined graph.
+d 
+d The help file for {cmd:grc1leg2} provides examples of embedding
+d a legend in a multi-panel graph, comparing approaches which use,
+d respectively, {help graph ..., by()}, {help graph combine} and {cmd:grc1leg2}.
+d The dialog offers point-and-click access to {cmd:grc1leg2} options.
+d 
+d Just as {help graph combine} automatically reduces the size
+d of text in component graphs, {cmd:grc1leg2} now automatically
+d reduces the size of all elements of the borrowed legend.
+d The user can override this default behavior with options
+d that control the size of all or individual legend elements.
+d 
+d Version 2.26 fixes bugs in versions 1.6 and 2.0 - 2.24 that sometimes
+d caused {cmd:grc1leg2} to scramble memory graphs and {help serset}s.
+d 
+d Author: {browse "http://www.cgdev.org/expert/mead-over/":Mead Over}, Center for Global Development
+d http://www.cgdev.org/expert/mead-over
+d 
+d Requires Stata Version 13.1 or later
+d 
+d Version 2.26 4Nov2023
+d Adds ten capabilities to version 1.0.5 of {search grc1leg} 02jun2010, by Vince Wiggins
+d 
+d Distribution-Date: 20231104
+f g\grc1leg2.ado
+f g\grc1leg2.sthlp
+f g\grc1leg2.dlg
+f g\grc1leg2_examples.ado
+e
+S http://fmwww.bc.edu/repec/bocode/a
+N asdoc.pkg
+D  1 Jul 2024
+U 40
+d 'ASDOC': module to create high-quality tables in MS Word from Stata output
+d 
+d     asdoc sends Stata output to Word / RTF format. asdoc creates
+d high-quality, publication-ready tables from  various Stata
+d commands such as summarize, correlate, pwcorr, tab1, tab2,
+d tabulate1, tabulate2, tabstat,    ttest, regress, table, amean,
+d proportions, means, and many more. Using asdoc is pretty easy.
+d We need to just add asdoc as a prefix to Stata commands. asdoc
+d has several built-in routines for dedicated calculations    and
+d making nicely formatted tables.
+d 
+d KW: tables
+d KW: Word
+d KW: RTF
+d KW: regression
+d KW: ttest
+d KW: tabstat
+d KW: frequency
+d KW: publication-quality
+d KW: descriptive statistics
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20210723
+d 
+d Author: Attaullah Shah, Institute of Management Sciences
+d Support: email attashah15@@hotmail.com
+d 
+f a\asdoc.ado
+f a\asdoc.sthlp
+f l\lasdoc.mlib
+e
+S http://fmwww.bc.edu/repec/bocode/r
+N rbounds.pkg
+D 22 Aug 2024
+U 41
+d 'RBOUNDS': module to perform Rosenbaum sensitivity analysis for average treatment effects on the treated
+d 
+d rbounds calculates Rosenbaum bounds for average treatment effects
+d on  the treated in the presence of unobserved heterogeneity
+d (hidden bias)  between treatment and control cases. rbounds takes
+d the difference in the  response variable between treatment and
+d control cases as input variable  varname. The procedure then
+d calculates Wilcoxon signrank tests that give upper and lower
+d bound estimates of significance levels at given levels of  hidden
+d bias. Under the assumption of additive treatment effects, rbounds
+d  also provides Hodges-Lehmann point estimates and confidence
+d intervals for  the average treatment effect on the treated. If
+d installed, the input variable  varname may be generated from
+d psmatch or psmatch2. Currently,  rbounds implements the
+d sensitivity tests for matched (1x1) pairs only.
+d 
+d Distribution-Date: 20040325
+d 
+d Author: Markus Gangl, Social Science Centre Berlin (WZB)
+d Support: email  gangl@@wz-berlin.de
+d 
+f r\rbounds.ado
+f r\rbounds.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/i
+N ivreg2.pkg
+D 17 Oct 2024
+U 42
+d 'IVREG2': module for extended instrumental variables/2SLS and GMM estimation
+d 
+d  ivreg2 provides extensions to Stata's official ivregress and
+d newey. Its main capabilities: two-step feasible GMM estimation;
+d continuously updated GMM estimation (CUE); LIML and k-class
+d estimation; automatic output of the Hansen-Sargan or
+d Anderson-Rubin statistic for overidentifying restrictions; C
+d statistic test of exogeneity of subsets of instruments (orthog()
+d option); kernel-based autocorrelation-consistent (AC) and
+d heteroskedastic and autocorrelation-consistent (HAC) estimation,
+d with user-specified choice of kernel; Cragg's "heteroskedastic
+d OLS" (HOLS) estimator; default reporting of large-sample
+d statistics (z and chi-squared rather than t and F); small option
+d to report small-sample statistics; first-stage regression
+d reported with F-test of excluded instruments and R-squared with
+d included instruments "partialled-out"; enhanced Kleibergen-Paap
+d and Cragg-Donald tests for weak instruments, redundancy of
+d instruments, significance of endogenous regressors; two-way
+d clustering of standard errors;  Kiefer and Driscoll-Kraay
+d standard errors. ivreg2 can also be used for ordinary least
+d squares (OLS) estimation using the same command syntax as Stata's
+d official regress and newey. New in this version: ivreg2 now
+d supports factor variables. This is version 4.1.11 of ivreg2,
+d updated from that published in Stata Journal, 5(4), requiring
+d Stata 11.2 or better. Stata 8.2/9.2/10.2 users may use this
+d routine, which will  automatically call ivreg28, ivreg29, or
+d ivreg210, respectively. These versions are now included in the
+d ivreg2 package. Stata 7 users may use the Stata Journal version
+d of ivreg2, accessible via net search ivreg2.
+d 
+d KW: instrumental variables
+d KW: Sargan test
+d KW: robust estimation
+d KW: orthogonality
+d KW: GMM
+d KW: Hansen's J
+d KW: heteroskedastic OLS,
+d 
+d Requires: Stata version 11.2 and ranktest from SSC
+d 
+d Distribution-Date: 20240814
+d 
+d Author: Christopher F Baum, Boston College
+d Support: email baum@@bc.edu
+d 
+d Author: Mark E Schaffer, Heriot-Watt University
+d Support: email m.e.schaffer@@hw.ac.uk
+d 
+d Author: Steven Stillman, Free University of Bozen-Bolzano
+d Support: email  Steven.Stillman@@unibz.it
+d 
+f i\ivreg2.ado
+f i\ivreg2.sthlp
+f i\ivreg2_p.ado
+f l\livreg2.mlib
+f i\ivreg210.ado
+f i\ivreg210.sthlp
+f i\ivreg210_p.ado
+f i\ivreg29.ado
+f i\ivreg29.hlp
+f i\ivreg29_p.ado
+f i\ivreg29_cue.ado
+f i\ivreg28.ado
+f i\ivreg28.hlp
+f i\ivreg28_p.ado
+f i\ivreg28_cue.ado
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N cmp.pkg
+D 17 Oct 2024
+U 43
+d 'CMP': module to implement conditional (recursive) mixed process estimator
+d 
+d  cmp estimates multi-equation, mixed process models, potentially
+d with hierarchical random effects. "Mixed process" means that
+d different equations can have different kinds of dependent
+d variables. The choices are: continuous (like OLS), tobit (left-,
+d right-, or bi-censored), probit, ordered probit or fractional
+d probit. "Conditional" means that the model can vary by
+d observation. An equation can be dropped for observations for
+d which it is not relevant--if, say, a worker retraining program is
+d not offered in a city then the determinants of uptake cannot be
+d modeled there. Or the type of dependent variable can vary by
+d observation. A dependent variable in one equation can appear on
+d the right side of another equation. Such dependencies must have a
+d recursive structure if the dependencies are on censored variables
+d as observed, meaning that they split the equations into stages.
+d If the dependencies are on (latent) linear dependent variables,
+d they can be recursive or simultaneous in structure. So cmp can
+d fit many SUR, simultaneous equation, and IV models. cmp's
+d modeling framework therefore embraces those of the official Stata
+d commands  probit, ivprobit, treatreg, biprobit, tetrachoric,
+d oprobit, mprobit, asmprobit, asroprobit, tobit, ivtobit, cnreg,
+d intreg, truncreg, heckman, heckprob, xtreg, xtprobit, xttobit,
+d xtintreg, in principle even regress, sureg, and reg3. It goes
+d beyond them in offering far more flexibility in model
+d construction. The routine runs under Stata 10 or later, faster
+d under Stata 11.2 or later.
+d 
+d KW: conditional models
+d KW: mixed process modules
+d KW: probit
+d KW: tobit
+d KW: ivtobit
+d KW: biprobit
+d KW: multinomial probit
+d KW: ordered probit
+d KW: truncated regression
+d KW: fractional probit
+d 
+d Requires: Stata version 13 and package ghk2 (q.v.)
+d 
+d Distribution-Date: 20240418
+d 
+d Author: David Roodman
+d Support: email david@@davidroodman.com
+d 
+f c\cmp.ado
+f c\cmp_p.ado
+f c\cmp.sthlp
+f c\cmp.mata
+f l\lcmp.mlib
+f c\cmp_clear.ado
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N ghk2.pkg
+D 17 Oct 2024
+U 44
+d 'GHK2': module (enhanced Mata function) to implement the Geweke-Hajivassiliou-Keane multivariate normal simulator
+d 
+d   ghk2() estimates cumulative multivariate normal probabilities
+d and optionally  computes scores. It is modeled on Stata 10's
+d ghkfast(), using pre-generated draws for speed.  It differs in
+d the following significant respects: (1) It accepts lower as well
+d as upper bounds  of integration. (2) It works in Stata 9. (3) It
+d is an order of magnitude faster than ghkfast()  when the number
+d of observations is high relative to the number of simulation
+d draws per  observation, though it can be slower at the opposite
+d extreme. (4) It does not "pivot" bounds of integration, putting
+d the larger entries toward the end, which somewhat increases  the
+d variability of the simulated probability but eliminates
+d discontinuities in the function  that can otherwise stymie a
+d likelihood search by -ml- when draws are few.
+d 
+d KW: multivariate normal
+d KW: Geweke-Hajivassiliou-Keane
+d KW: Mata
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20240723
+d 
+d Author: David Roodman, Givewell.org
+d Support: email DRoodman@@outlook.com
+d 
+f g\ghk2version.ado
+f g\ghk2.mata
+f g\ghk2.hlp
+f l\lghk2.mlib
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N sspecialreg.pkg
+D 17 Oct 2024
+U 45
+d 'SSPECIALREG': module to estimate binary choice model with discrete endogenous regressor via special regressor method
+d 
+d  sspecialreg estimates a binary choice model that includes one or
+d more endogenous regressors using Lewbel and Dong's special
+d regressor method (Econometric Reviews, 2015; Journal of
+d Econometrics, 2000). This assumes that the model  includes a
+d particular 'special regressor', V, that is exogenous and appears
+d additively in the model. It must be continuously distributed with
+d a large support. A special regressor with thick tails (greater
+d kurtosis) will be more useful as a special regressor.  This
+d method has advantages over the linear probability model
+d (estimated with OLS or IV), maximum likelihood and control
+d function methods. The xtspecialreg command estimates the model in
+d a panel data setting, with the data xtset or tsset. The ivreg2 or
+d xtivreg2 options, combined with the first option, provide access
+d to additional diagnostic tests.
+d 
+d KW: special regressor
+d KW: binary choice
+d KW: discrete endogenous regressor
+d 
+d Requires: Stata version 11 and Jann's kdens from SSC (q.v.)
+d 
+d Distribution-Date: 20210112
+d 
+d Author: Christopher F Baum, Boston College
+d Support: email baum@@bc.edu
+d 
+f s\sspecialreg.ado
+f s\ssortedfm.ado
+f _\_sspecialreg.ado
+f s\sspecialreg.sthlp
+f x\xtspecialreg.ado
+f _\_xtspecialreg.ado
+f x\xtspecialreg.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/k
+N kdens.pkg
+D 17 Oct 2024
+U 46
+d 'KDENS': module for univariate kernel density estimation
+d 
+d    kdens produces univariate kernel density estimates and graphs
+d the result. kdens supplements official Stata's kdensity.
+d Important additions are: adaptive (i.e. variable bandwidth)
+d kernel density estimation, several automatic bandwidth selectors
+d including the Sheather-Jones plug-in estimator, pointwise
+d variability bands and confidence intervals, boundary correction
+d for variables with bounded domain, fast binned approximation
+d estimation. Note that the moremata package, also available from
+d SSC, is required.
+d 
+d KW:  adaptive kernel density
+d KW: binned kernel estimator
+d KW: Sheather-Jones plug-in
+d KW: boundary correction
+d KW: reflection
+d 
+d Requires: Stata version 9.1 and moremata package
+d 
+d Distribution-Date: 20080526
+d 
+d Author: Ben Jann, ETH Zurich
+d Support: email ben.jann@@soz.gess.ethz.ch
+d 
+f _\_kdens.ado
+f _\_kdens.hlp
+f k\kdens.ado
+f k\kdens.hlp
+f k\kdens.mata
+f l\lkdens.mlib
+f m\mf_kdens.hlp
+f t\twoway_kdens_parse.class
+e
+S http://fmwww.bc.edu/repec/bocode/r
+N rbiprobit.pkg
+D 18 Oct 2024
+U 47
+d 'RBIPROBIT': module to estimate recursive bivariate probit regressions
+d 
+d  rbiprobit is a user-written command that fits a recursive
+d bivariate probit regression using maximum likelihood estimation.
+d The model involves an outcome equation and a treatment equation,
+d whereas the treatment variable is an endogenous explanatory
+d variable of the outcome equation. Both dependent variables have
+d to be binary. Postestimation commands allow to compute various
+d treatment effects and a decomposition of marginal effects.
+d 
+d KW: bivariate probit
+d KW: recursive
+d KW: maximum likelihood
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20220419
+d 
+d Author: Mustafa Coban, Institute for Employment Research, Nürnberg
+d Support: email mustafa.coban@@iab.de
+d 
+f r\rbiprobit.ado
+f r\rbiprobit_lf1.ado
+f r\rbiprobit_margdec.ado
+f r\rbiprobit_p.ado
+f r\rbiprobit_tmeffects.ado
+f r\rbiprobit.sthlp
+f r\rbiprobit_margdec.sthlp
+f r\rbiprobit_postestimation.sthlp
+f r\rbiprobit_tmeffects.sthlp
+e

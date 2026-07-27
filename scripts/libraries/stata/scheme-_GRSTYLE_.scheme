@@ -1,0 +1,19 @@
+#include tab2
+color background white
+color plotregion white
+color graphregion white
+color legend white
+color box white
+color textbox white
+gsize heading 3.472222222222222
+gsize subheading 2.777777777777778
+gsize axis_title 2.777777777777778
+gsize p1label 2.777777777777778
+gsize p1boxlabel 2.777777777777778
+gsize body 2.777777777777778
+gsize small_body 2.777777777777778
+gsize text_option 2.777777777777778
+gsize axis_label 2.777777777777778
+gsize tick_label 2.777777777777778
+gsize minortick_label 2.777777777777778
+gsize key_label 2.777777777777778
