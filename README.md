@@ -39,8 +39,8 @@ produces it.
 
 Code is on GitHub; the data are on Zenodo because they exceed GitHub's file-size limits.
 
-- Code: `https://github.com/<ORG>/<REPO>` — **fill in before release**
-- Data: `https://doi.org/10.5281/zenodo.<ID>` — **fill in before release**
+- Code: <https://github.com/IvoSteimanis/PES-Mozambique>
+- Data: `https://doi.org/10.5281/zenodo.<ID>` — **Zenodo deposit pending; fill in before release**
 
 Download both, then unpack the Zenodo archive into the repository root so that `data/` and
 `processed/` sit next to `run.do`.
