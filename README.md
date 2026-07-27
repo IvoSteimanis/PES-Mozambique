@@ -94,8 +94,7 @@ A timestamped log is written to `scripts/logs/`.
 .
 ├── run.do                     master script; run this
 ├── README.md
-├── LICENSE-code.txt           Modified BSD, applies to scripts/
-├── LICENSE-data.txt           CC BY 4.0, applies to data/ and processed/
+├── LICENSE                    CC BY 4.0, applies to the whole package
 ├── data/
 │   └── remote_sensing/        grid-cell geometry used for the maps
 ├── processed/                 analysis-ready datasets
@@ -237,21 +236,23 @@ Tropical Moist Forest product. `docs/crosswalk.md` records these.
 
 ## Licence
 
-The package as a whole is released under **CC BY 4.0**, which is the licence recorded on the
-Zenodo deposit. Attribution is the only condition: cite the paper and the deposit.
-
-Within the package two licences apply, because a single licence does not suit both parts:
-
-- **Data** (`data/`, `processed/`): CC BY 4.0. See `LICENSE-data.txt`, which also sets out
-  the condition that the de-identified survey data must not be used to re-identify
-  respondents or the study villages.
-- **Code** (`scripts/`, `run.do`): Modified BSD Licence. See `LICENSE-code.txt`. CC BY is not
-  written for software, so the code additionally carries BSD terms, which supply the warranty
-  disclaimer that CC BY lacks. BSD is the more permissive of the two, so this adds no
-  restriction beyond attribution.
+Everything in this package, code and data alike, is released under the
+[Creative Commons Attribution 4.0 International Licence](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0). See `LICENSE`. Attribution is the only condition: cite the article and the Zenodo
+deposit.
 
 The vendored Stata add-ons in `scripts/libraries/stata` are third-party packages redistributed
-under their own licences; see the individual package files.
+under their own licences; see the individual package files. They are not covered by the above.
+
+### A request about the survey data
+
+This is not a condition of the licence, which imposes none beyond attribution. It is an ethical
+expectation, and in most jurisdictions a legal one under data-protection law.
+
+The household data are de-identified but derive from human subjects who gave consent for
+research use. Please do not attempt to re-identify individual respondents or the study
+villages, whether by linkage to other datasets or by any other means, and do not publish
+anything that would make an individual household identifiable.
 
 ## Funding
 
