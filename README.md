@@ -1,5 +1,7 @@
 # Replication package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21629264.svg)](https://doi.org/10.5281/zenodo.21629264)
+
 **A terminated REDD+ project in Mozambique: Mitigation underperformance, lasting local benefits**
 
 Ivo Steimanis<sup>a,\*</sup>, Tobias Vorlaufer<sup>b</sup>, Björn Vollan<sup>a</sup>
@@ -37,14 +39,16 @@ produces it.
 
 ## Getting the package
 
-Code is on GitHub; the data are on Zenodo because they exceed GitHub's file-size limits.
+The code lives on GitHub and is archived on Zenodo. The data are distributed separately
+because they exceed GitHub's file-size limits.
 
-- Code: <https://github.com/IvoSteimanis/PES-Mozambique>
-- Data: `https://doi.org/10.5281/zenodo.<ID>` — Zenodo concept DOI, resolves to the latest
-  version. **Deposit pending; DOI to be filled in.**
+- **Code:** <https://github.com/IvoSteimanis/PES-Mozambique>, archived at
+  [10.5281/zenodo.21629264](https://doi.org/10.5281/zenodo.21629264). This is a concept DOI
+  and always resolves to the latest release.
+- **Data:** `https://doi.org/10.5281/zenodo.<DATA-ID>` — **deposit pending, DOI to be added.**
 
-Download both, then unpack the Zenodo archive into the repository root so that `data/` and
-`processed/` sit next to `run.do`.
+Clone or download the code, then unpack the data archive into the repository root so that
+`data/` and `processed/` sit next to `run.do`.
 
 ## Requirements
 
