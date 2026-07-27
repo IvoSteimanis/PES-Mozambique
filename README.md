@@ -39,8 +39,10 @@ produces it.
 
 ## Getting the package
 
-The code lives on GitHub and is archived on Zenodo. The data are distributed separately
-because they exceed GitHub's file-size limits.
+The code lives on GitHub and is archived on Zenodo. The data are deposited separately on
+Zenodo so that they carry a citable DOI, so that the deposit is permanently archived rather
+than dependent on a repository that can be renamed or removed, and so that cloning the code
+does not pull 320 MB of binary Stata files.
 
 - **Code:** <https://github.com/IvoSteimanis/PES-Mozambique>, archived at
   [10.5281/zenodo.21629264](https://doi.org/10.5281/zenodo.21629264). This is a concept DOI
