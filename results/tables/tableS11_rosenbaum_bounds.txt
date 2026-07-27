@@ -1,0 +1,56 @@
+. di as text "Table S11. Rosenbaum bounds, Hansen 20% canopy threshold"
+Table S11. Rosenbaum bounds, Hansen 20% canopy threshold
+
+. di as text ""
+
+
+. di as text "Panel A: difference in mean forest cover during the SCCP (2005-20
+> 14)"
+Panel A: difference in mean forest cover during the SCCP (2005-2014)
+
+. rbounds delta, gamma(1 (0.2) 1.6)
+
+Rosenbaum bounds for delta (N = 2251 matched pairs)
+
+Gamma           sig+      sig-    t-hat+    t-hat-       CI+       CI-
+----------------------------------------------------------------------
+    1              0         0   2.64807   2.64807   2.14394   3.18871  
+  1.2        5.4e-15         0   1.68733   3.71212   1.22039   4.24586  
+  1.4        1.5e-06         0    .92631   4.61398   .475207    5.2135  
+  1.6        .019872         0   .330579   5.45454  -3.9e-07   6.08127  
+
+* gamma  - log odds of differential assignment due to unobserved factors
+  sig+   - upper bound significance level
+  sig-   - lower bound significance level
+  t-hat+ - upper bound Hodges-Lehmann point estimate
+  t-hat- - lower bound Hodges-Lehmann point estimate
+  CI+    - upper bound confidence interval (a=  .95)
+  CI-    - lower bound confidence interval (a=  .95)
+
+. di as text ""
+
+
+. di as text "Panel B: difference in mean forest cover after the SCCP (2015-201
+> 9)"
+Panel B: difference in mean forest cover after the SCCP (2015-2019)
+
+. rbounds delta2, gamma(1 (0.2) 1.6)
+
+Rosenbaum bounds for delta2 (N = 2251 matched pairs)
+
+Gamma           sig+      sig-    t-hat+    t-hat-       CI+       CI-
+----------------------------------------------------------------------
+    1        1.2e-13   1.2e-13    2.8719    2.8719   2.06612   3.66391  
+  1.2        .000148         0   1.36364   4.41185   .626722   5.24105  
+  1.4        .305748         0   .165287   5.74036  -.557849   6.59091  
+  1.6        .985507         0  -.860882   6.90771  -1.72176    7.7686  
+
+* gamma  - log odds of differential assignment due to unobserved factors
+  sig+   - upper bound significance level
+  sig-   - lower bound significance level
+  t-hat+ - upper bound Hodges-Lehmann point estimate
+  t-hat- - lower bound Hodges-Lehmann point estimate
+  CI+    - upper bound confidence interval (a=  .95)
+  CI-    - lower bound confidence interval (a=  .95)
+
+. 

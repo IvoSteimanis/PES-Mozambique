@@ -134,6 +134,11 @@ rbounds delta2, gamma(1 (0.2) 1.6)
 
 log close rbounds_log
 
+* Remove the absolute path that Stata records in the log header and footer.
+global STRIP_FILE   "$working_ANALYSIS/results/tables/tableS11_rosenbaum_bounds.txt"
+global STRIP_MARKER "Table S11."
+do "$working_ANALYSIS/scripts/_strip_log_header.do"
+
 
 *--------------
 *SCCP Area

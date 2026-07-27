@@ -37,17 +37,19 @@ produces it.
 
 ## Getting the package
 
-The code lives on GitHub and is archived on Zenodo. The data are deposited separately on
-Zenodo so that they carry a citable DOI, so that the deposit is permanently archived rather
-than dependent on a repository that can be renamed or removed, and so that cloning the code
-does not pull 320 MB of binary Stata files.
+This repository is self-contained. Code, analysis-ready data and the reference output are all
+included, so you can clone it and run `run.do` immediately, then compare your output against
+what the authors produced.
 
-- **Code:** <https://github.com/IvoSteimanis/PES-Mozambique>
-- **Data and archived code:** `https://doi.org/10.5281/zenodo.<ID>` —
+- **Repository:** <https://github.com/IvoSteimanis/PES-Mozambique> (about 350 MB)
+- **Archive:** `https://doi.org/10.5281/zenodo.<ID>` —
   **Zenodo deposit pending; the concept DOI will be added here.**
 
-Clone or download the code, then unpack the data archive into the repository root so that
-`data/` and `processed/` sit next to `run.do`.
+Cite the Zenodo DOI rather than the repository URL. It is permanent, whereas a repository can
+be renamed, transferred or deleted.
+
+The only thing not tracked is `results/intermediate/`, 248 MB of working `.gph` graph panels
+that `run.do` regenerates and that contain nothing not already in `results/figures/`.
 
 ## Requirements
 
@@ -58,7 +60,8 @@ Clone or download the code, then unpack the data archive into the repository roo
   anything, so results do not depend on what happens to be installed on your machine. See
   `docs/software_versions.md`. `scripts/00_install_packages.do` rebuilds the library from
   source but is **not** part of the normal run.
-- Approximately 1 GB of free disk space beyond the data.
+- Approximately 1.5 GB of free disk space: 350 MB for the repository and roughly 1 GB for the
+  intermediate graph files that a run generates.
 - Python and QGIS are needed only to rebuild inputs that are not part of this pipeline
   (see `docs/data_provenance.md`).
 
@@ -78,8 +81,10 @@ unpacked, and stops with a clear message if not.
 Expected runtime: about 25 to 40 minutes on a current desktop, dominated by the propensity
 score matching in scripts 02 to 04 and by the multiple imputation in script 11.
 
-For a clean run, delete `results/` first. Keep `processed/`: it holds the analysis-ready
-data and, without the raw data, cannot be regenerated.
+`results/` ships populated with the authors' output, so a fresh run overwrites it in place and
+you can use `git status` and `git diff --stat` to see whether anything changed. For a run from
+empty, delete `results/` first. Never delete `processed/`: it holds the analysis-ready data and,
+without the raw survey, cannot be regenerated.
 
 A timestamped log is written to `scripts/logs/`.
 
@@ -93,12 +98,12 @@ A timestamped log is written to `scripts/logs/`.
 ├── LICENSE-data.txt           CC BY 4.0, applies to data/ and processed/
 ├── data/
 │   └── remote_sensing/        grid-cell geometry used for the maps
-├── processed/                 analysis-ready datasets (from Zenodo)
-├── results/                   generated output
+├── processed/                 analysis-ready datasets
+├── results/                   output, shipped populated as a reference
 │   ├── figures/               figures reported in the paper and the SI
 │   ├── tables/                tables reported in the SI
 │   ├── diagnostics/           supporting output NOT reported in the paper
-│   └── intermediate/          working .gph panels
+│   └── intermediate/          working .gph panels (not tracked; regenerated)
 ├── scripts/
 │   ├── 00_install_packages.do rebuild the ado library (not normally run)
 │   ├── 01_clean_data.do       raw data to analysis-ready (see caveat below)
@@ -146,7 +151,7 @@ Figure 4.
 ## Data availability and confidentiality
 
 The **grid-cell remote-sensing data** carry no personal information and are distributed in
-full via Zenodo.
+full.
 
 The **household survey** is distributed in de-identified form only. Respondent names, phone
 numbers, GPS coordinates, enumerator identifiers, interview timestamps, village names and all
@@ -171,12 +176,10 @@ requires a confidentiality agreement.
 The Hansen Global Forest Change rasters are public and are not mirrored here; download
 instructions are in `docs/data_provenance.md`.
 
-Note for anyone redistributing this package: `results/` and `scripts/logs/` are generated
-locally and are **not** part of the distributed archive. Stata writes the absolute path of
-the machine that produced them into log headers, including the headers of
-`results/tables/tableS11_rosenbaum_bounds.txt` and
-`results/tables/tableS20_S21_factor_agency.txt`. `.gitignore` excludes both folders. Ship
-`processed/` and the code; let the replicator regenerate `results/`.
+Note on run logs: Stata records the absolute path of the machine that produced a log in its
+header. `scripts/logs/` is therefore untracked, and the two tables captured from Stata logs,
+`tableS11_rosenbaum_bounds.txt` and `tableS20_S21_factor_agency.txt`, have that header
+stripped by `scripts/_strip_log_header.do` before they are written.
 
 ## Reproducibility notes
 

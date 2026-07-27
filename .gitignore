@@ -1,11 +1,15 @@
-# Generated output. Everything here is reproduced by run.do.
-results/
+# This repository is self-contained: the code, the analysis-ready data, and the
+# reference output are all tracked, so run.do can be executed straight after
+# cloning and its output compared against what the authors produced.
+
+# Working graph panels. run.do regenerates these, and they are 248 MB of .gph
+# files carrying no information not already in results/figures.
+results/intermediate/
+
+# Run logs. Timestamped, machine-specific, and they embed the absolute path of
+# the machine that produced them.
 scripts/logs/*.log.txt
 run.log
-
-# Data lives on Zenodo, not in the repository (see README.md).
-processed/*.dta
-data/**/*.dta
 
 # OS and editor cruft
 desktop.ini

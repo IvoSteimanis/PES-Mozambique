@@ -745,6 +745,11 @@ factor env_belief1 env_belief2 env_belief3 env_belief4 env_belief5 env_belief6 e
 
 log close factor_log
 
+* Remove the absolute path that Stata records in the log header and footer.
+global STRIP_FILE   "$working_ANALYSIS/results/tables/tableS20_S21_factor_agency.txt"
+global STRIP_MARKER "Table S20."
+do "$working_ANALYSIS/scripts/_strip_log_header.do"
+
 estat kmo
 *okay Kmo score
 predict env_agency
